@@ -11,12 +11,6 @@
 ::BLOG_HOST = Rails.env.development? ? "dev.samsaffron.com" : "edubbs.club"
 ::BLOG_DISCOURSE = Rails.env.development? ? "l.discourse" : "edubbs.org"
 
-module ::Blog
-  class Engine < ::Rails::Engine
-    engine_name "blog"
-    isolate_namespace Blog
-  end
-end
 
 
 
